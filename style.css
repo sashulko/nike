@@ -1,0 +1,152 @@
+:root {
+  --nav-color: #c7c7c7;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  border: inherit;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: solid gray;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #012d63;
+  padding: 22px;
+}
+.nav-link {
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 24px;
+  color: #c7c7c7;
+}
+.nav-link:hover {
+  font-weight: 400;
+  color: #ffffff;
+}
+.header-btn {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2px;
+  color: #dcdcdc;
+  background-color: transparent;
+  border: transparent;
+}
+.header-btn:hover {
+  color: #ffffff;
+}
+.main-btn {
+  display: center;
+  justify-content: bottom;
+  border-radius: 3px;
+  border: #333;
+  background-color: #8e32c6;
+}
+.navigation {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 33px;
+}
+.header-btn-list {
+  display: flex;
+}
+.nav-item {
+  padding-right: 29px;
+
+  padding-bottom: 33px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2px;
+  color: var(--nav-color);
+}
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 29px;
+}
+
+.add {
+  background-image: url(./img/Group\ 37.jpg);  
+}
+
+.premium-quality::after {
+  background-image: url(./img/Звёзды\ 1.png);
+  background-color: transparent;
+}
+.indelible-paint::before {
+  content: "";
+  background-image: url(./img/Краски\ 1.png);
+  background-color: transparent;
+}
+.fast-shipping::after {
+  content: "";
+
+  background-image: url(./img/Грузан\ 1.png);
+  background-color: transparent;
+}
+.possitiblies {
+  content: "";
+  background-image: url(./img/background.jpg);
+  background-color: transparent;
+  background-color: #012d63;
+}
+.premium-quality {
+  font-family: "Playfair Display", sans-serif;
+}
+.indelible-paint {
+  font-family: "Playfair Display", sans-serif;
+}
+.fast-shipping {
+  font-family: "Playfair Display", sans-serif;
+}
+.footer {
+  background-color: #021635;
+  align-content: center;
+}
+.reviews {
+  display: flex;
+
+  width: 0 auto;
+
+  background-image: url(./img/background-3.png);
+
+  justify-content: center;
+  background-color: #012d63;
+}
+
+.order {
+  display: grid;
+  background-image: url(./img/background-2.jpg);
+  background-color: #021635;
+  justify-content: center;
+}
+.email {
+  container: center;
+  border-radius: 50px;
+  background-color: #8e32c6;
+}
+
+.section-btn {
+  cursor: grab;
+}
+.order-btn {
+  border-radius: 3px;
+  border: black;
+  background-color: #8e32c6;
+}
+.footer-question {
+}
