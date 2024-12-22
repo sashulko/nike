@@ -27,6 +27,7 @@ p {
   justify-content: space-between;
   background-color: #012d63;
   padding: 22px;
+  background-size: cover;
 }
 .nav-link {
   font-weight: 300;
@@ -97,6 +98,7 @@ p {
 .background {
   background-image: url(./img/Group\ 37.jpg);  
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .premium-quality::after {
@@ -117,7 +119,6 @@ p {
 .background-possitiblies{
   content: "";
   background-image: url(./img/background.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
 }
 .premium-quality {
@@ -135,24 +136,18 @@ p {
 }
 .background-reviews {
   display: flex;
-
-  width: 0 auto;
-
   background-image: url(./img/background-3.png);
-
-  justify-content: center;
-  background-color: #012d63;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .background-order {
   display: grid;
   background-image: url(./img/background-2.jpg);
-  background-color: #021635;
   justify-content: center;
-  background-size: contain;
+  background-size:cover;
   background-repeat: no-repeat;
+
 }
 .email {
   container: center;
