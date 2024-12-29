@@ -3,6 +3,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #012d63;
   color: white;
   font-size: 16px;
 }
@@ -26,7 +27,7 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: #012d63;
-  padding: 22px;
+  padding: 33px;
   background-size: cover;
 }
 .nav-link {
@@ -101,25 +102,45 @@ p {
   background-repeat: no-repeat;
 }
 
-.premium-quality::after {
-  background-image: url(./img/Звёзды\ 1.png);
-  background-color: transparent;
-}
-.indelible-paint::before {
-  content: "";
-  background-image: url(./img/Краски\ 1.png);
-  background-color: transparent;
-}
-.fast-shipping::after {
-  content: "";
-
-  background-image: url(./img/Грузан\ 1.png);
-  background-color: transparent;
-}
-.background-possitiblies{
-  content: "";
+.possitiblies{
   background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
+  padding: 105px 0;
+  background-position: center;
+}
+.possitiblies-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 140px ;
+  border: 5px solid #8e32c6;
+}
+.possitiblies-list > li{
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47.99px;
+  
+}
+.premium-quality::after {
+  display:block;
+  content: "";
+  background-color: transparent;
+  align-content: left;
+  color: #ffffff;
+}
+.indelible-paint::before {
+  display:block;
+  content: "";
+  background-color: transparent;
+  color: #ffffff;
+}
+.fast-shipping::after {
+  display:block;
+  content: "";
+  background-color: transparent;
+  align-content: right;
+  color: #ffffff;
 }
 .premium-quality {
   font-family: "Playfair Display", sans-serif;
@@ -131,37 +152,144 @@ p {
   font-family: "Playfair Display", sans-serif;
 }
 .footer {
+  display: flex;
   background-color: #021635;
-  align-content: center;
+  text-align: center;
 }
+
 .background-reviews {
   display: flex;
   background-image: url(./img/background-3.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.background-order {
-  display: grid;
+.order-title{
+  font-family: "Playfair Display", sans-serif;
+  font-size: 48px;
+  Font-weight: 400;
+  line-height: 63.98px;
+  text-align: center;
+  margin-bottom:30px;
+}
+.order {
   background-image: url(./img/background-2.jpg);
-  justify-content: center;
-  background-size:cover;
   background-repeat: no-repeat;
+  padding: 105px 0;
+  background-position: center;
+}
+.information{
+  justify-content: center;
+  flex-direction: column;
+}
+.order-item{
+  margin: 0 auto;
+  text-align: center;
 
 }
-.email {
-  container: center;
+.order-input {
+  display: inline-block; 
   border-radius: 50px;
-  background-color: #8e32c6;
+  margin: 0 auto;
+  width: 580px; 
+  padding: 11px 24px;
+  border-color: transparent;
+  margin-bottom: 20px;
 }
+
 
 .section-btn {
   cursor: grab;
 }
 .order-btn {
-  border-radius: 3px;
-  border: black;
+  display: block;
+  width: 248px;
+  height: 68px;
+  top: 2478px;
+  left: 596px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;  
+  border: white;
   background-color: #8e32c6;
+  margin: 0 auto;
+  text-align: center;
+
 }
-.footer-question {
+
+.reviews{
+  padding-top: 25px;
+padding-bottom: 114px;
+  background-image: url(./img/bg-reviews.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto';
+  font-weight: 400;  
+}
+
+.reviews-list{
+  margin: 0 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 93px;
+}
+.title{ 
+  margin-bottom: 24px;
+  
+  display: block;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.33;
+  text-align: center;
+}
+.reviews-item{
+padding: 49px 13px 29px 13px;
+  border-radius: 15px;
+}
+.reviews-item:nth-child(1){
+  background: linear-gradient(#00E5E6,#00A8F7,#9A76F9,#CC5EC2);
+box-shadow: 0px 14px 0px -5px #7B54B2, 0px 30px 0px -13px #533978;;
+
+}
+.reviews-item:nth-child(2){
+  background: linear-gradient(#FF68B4,#FF45E1,#CE3AFF,#8961FF);
+  box-shadow: 0px 14px 0px -5px #9159B1, 0px 30px 0px -13px #61337C;
+}
+.reviews-item:nth-child(3){
+  background: linear-gradient(#FFE128,#FF9B5C,#FF8381,#FF5489);
+box-shadow: 0px 14px 0px -5px #B95A4C, 0px 30px 0px -13px #732F26;
+}
+.reviews-text{
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 8px;
+}
+.review-image-wrap{
+  display: flex;
+}
+.reviews-date{
+  margin-bottom: 47px;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--grey);
+}
+.reviews-name{
+  font-size: 14px;
+  line-height: 1.17;
+}
+.reviews-image{
+  height: 31px;
+  width: 31px;
+  display: block;
+  
+}
+.reviews-with-us{
+  font-size: 12px;
+  line-height:1.17 ;
+  color: var(--grey);
 }
